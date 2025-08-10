@@ -37,7 +37,7 @@ body {
   color: var(--clr-slate-500);
 }
 
-.card {
+main {
   width: 320px;
   height: 499px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

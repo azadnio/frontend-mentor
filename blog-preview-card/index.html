@@ -4,15 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="A blog preview card solution for Frontend Mentor. Built with semantic HTML, CSS custom properties, and accessible design.">
+  <meta name="keywords" content="Frontend Mentor, Blog Preview Card, HTML, CSS, Accessibility, Web Development">
+  <meta name="author" content="Azad">
   <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | Blog preview card</title>
+  <title>Blog Preview Card | Frontend Mentor Solution by Azad</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog Preview Card | Frontend Mentor Solution">
+  <meta property="og:description"
+    content="A blog preview card solution for Frontend Mentor. Built with semantic HTML, CSS custom properties, and accessible design.">
+  <meta property="og:image" content="./src/assets/images/illustration-article.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-live-site-url.com">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog Preview Card | Frontend Mentor Solution">
+  <meta name="twitter:description"
+    content="A blog preview card solution for Frontend Mentor. Built with semantic HTML, CSS custom properties, and accessible design.">
+  <meta name="twitter:image" content="./src/assets/images/illustration-article.svg">
   <link rel="stylesheet" href="./src/assets/styles.css">
   <style>
     .attribution {
       position: absolute;
       bottom: 0;
       left: 0;
-      right: 0;      
+      right: 0;
       font-size: 11px;
       text-align: center;
       padding: 12px 0;
@@ -27,7 +44,8 @@
 <body>
   <main class="text-2">
     <article>
-      <img src="./src/assets/images/illustration-article.svg" alt="card image preview">
+      <img src="./src/assets/images/illustration-article.svg" alt="card image preview" width="336" height="201"
+        loading="lazy">
       <section>
         <button>Learning</button>
         <time datetime="2023-12-21">Published 21 Dec 2023</time>
@@ -35,7 +53,8 @@
         <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
       </section>
       <footer>
-        <img src="./src/assets/images/image-avatar.webp" alt="author avatar" class="avatar">
+        <img src="./src/assets/images/image-avatar.webp" alt="author avatar" class="avatar" width="32" height="32"
+          loading="lazy">
         <span class="text-3">Greg Hooper</span>
       </footer>
     </article>

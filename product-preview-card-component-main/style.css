@@ -1,0 +1,167 @@
+:root {
+  --ff-Montserrat: 'Montserrat', sans-serif;
+  --ff-Fraunces: 'Fraunces';
+
+  --clr-primary-500: hsl(158, 36%, 37%);
+  --clr-primary-700: hsl(158, 42%, 18%);
+
+  --clr-black: hsl(212, 21%, 14%);
+  --clr-grey: hsl(228, 14%, 48%);
+  --clr-cream: hsl(30, 38%, 92%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --width-max-container: 1440px;
+  --width-max-mobile: 376px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: var(--ff-Montserrat);
+  line-height: 1.5;
+  color: var(--clr-grey);
+  background-color: var(--clr-cream);
+  height: 100vh;
+}
+
+img {
+  /* width: 350px; */
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 1.2rem 0;
+  color: var(--clr-black);
+  line-height: 1;
+}
+
+h2 {
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--clr-grey);
+  font-weight: 500;
+}
+
+.container {
+  /* max-width: var(--width-max-container);
+   */
+  width: 625px;
+  margin: 0 auto;
+  margin: 0.9rem;
+  background-color: var(--clr-white);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+article {
+  padding: 1.5rem;
+}
+
+.price {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.price--new {
+  font-size: 1.8rem;
+  color: var(--clr-primary-500);
+}
+.price--old {
+  font-size: 0.9rem;
+  color: var(--clr-grey);
+  text-decoration: line-through;
+  margin-left: 0.8rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-primary-500);
+  color: var(--clr-white);
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  /* text-align: center; */
+  justify-content: center;
+}
+
+.btn__icon {
+  width: 0.8rem;
+  aspect-ratio: 1;
+  margin-right: 0.6rem;
+}
+
+.btn:hover {
+  background-color: var(--clr-primary-700);
+}
+
+.f-montserrat-500 {
+  font-family: var(--ff-Montserrat);
+  font-weight: 500;
+}
+
+.f-montserrat-700 {
+  font-family: var(--ff-Montserrat);
+  font-weight: 700;
+}
+
+.f-fraunces {
+  font-family: var(--ff-Fraunces);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  article{
+    width: 312px;
+  }
+
+  picture{
+    flex: 1;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.024rem;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .price--new {
+    font-size: 2.3rem;
+  }
+  .price--old {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,152 @@
+:root {
+  --ff-Poppins: 'Poppins', sans-serif;
+
+  --width-max-container: 1440px;
+  --width-max-mobile: 376px;
+
+  --clr-grey-500: hsl(234, 12%, 34%);
+  --clr-grey-400: hsl(212, 6%, 44%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: var(--ff-Poppins);
+  line-height: 1.5;
+  font-size: 15px;
+  color: var(--clr-grey-400);
+  background-color: var(--clr-white);
+  height: 100vh;
+  padding: 2.2rem;
+  padding-top: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr-grey-500);
+}
+
+main {
+  max-width: var(--width-max-container);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+header {
+  margin-bottom: 40px;
+  font-size: 0.8rem;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 4rem;
+  text-align: center;
+  line-height: 1.5;
+
+  span {
+    display: block;
+  }
+
+  h1 {
+    letter-spacing: 0.3px;
+    font-size: 1.475rem;
+  }
+
+  .light-heading {
+    color: var(--clr-grey-400);
+    font-weight: 300;
+  }
+
+  .bold-heading {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    line-height: 1.4;
+    color: var(--clr-grey-400);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.8rem;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+article {
+  background-color: var(--clr-white);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.175);
+  padding: 2rem;
+  border-top: 5px solid transparent;
+  display: flex;
+  flex-direction: column;
+
+  &:nth-child(1) {
+    border-color: hsl(180, 62%, 55%);
+  }
+
+  &:nth-child(2) {
+    border-color: hsl(0, 78%, 62%);
+  }
+
+  &:nth-child(3) {
+    border-color: hsl(34, 97%, 64%);
+  }
+
+  &:nth-child(4) {
+    border-color: hsl(212, 86%, 64%);
+  }
+
+  img {
+    padding: 2rem 0 1rem 0;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  section {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    article {
+      width: 350px;
+    }
+
+    article:nth-child(1) {
+      transform: translateY(50%);
+    }
+
+    article:nth-child(3) {
+      order: 4;
+    }
+
+    article:nth-child(4) {
+      transform: translateY(50%);
+      order: 3;
+    }
+  }
+}

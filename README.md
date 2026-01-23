@@ -2,6 +2,7 @@ As a frontend developer, I'm using this repository to refine my skills and adopt
 
 ## Links to the UI's
 
+4. UI Challenge 6 [Testimonials grid section](https://azadnio.github.io/frontend-mentor/testimonials/).
 4. UI Challenge 5 [Four card feature section](https://azadnio.github.io/frontend-mentor/four-card-feature-section/).
 3. UI Challenge 4 [Recipe main page](https://azadnio.github.io/frontend-mentor/recipe-page-main/).
 2. UI Challenge 3 [Create a social media profile links](https://azadnio.github.io/frontend-mentor/social-links-profile-main/).
